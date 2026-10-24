@@ -43,7 +43,7 @@ App 内置了**兜底地址**（同一个文件的 Gitee 镜像），会自动�
   "notes": "在线更新支持国内网络自动兜底",
   "downloadUrl": "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.4.2.apk",
   "mirrorDownloadUrls": [
-    "https://gitee.com/wch850412/headache-diary-releases/raw/main/headache-diary-1.4.2.apk",
+    "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.4.2/headache-diary-1.4.2.apk",
     "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.2/headache-diary-1.4.2.apk"
   ],
   "sizeBytes": 19602471,
@@ -86,7 +86,7 @@ powershell -File app\android\build-apk.ps1 -Task assembleRelease
 #    MirrorBaseUrl   = 备用下载地址（国内镜像 + Release 资产）
 powershell -File scripts\publish-update.ps1 `
   -DownloadBaseUrl "https://raw.githubusercontent.com/76762234/headache-diary-releases/main" `
-  -MirrorBaseUrl "https://gitee.com/wch850412/headache-diary-releases/raw/main" `
+  -MirrorBaseUrl "https://gitee.com/wch850412/headache-diary-releases/releases/download/v<版本号>" `
   -MirrorBaseUrl "https://github.com/76762234/headache-diary-releases/releases/download/v<版本号>" `
   -ManifestOut "<本仓库目录>/update-manifest.json" `
   -Notes "这次改了什么"
