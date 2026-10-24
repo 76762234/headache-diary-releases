@@ -1,15 +1,15 @@
 {
   "app": "headache-diary",
-  "version": "1.4.2",
-  "versionCode": 10402,
-  "publishedAt": 1792832979829,
-  "notes": "在线更新支持国内网络自动兜底：检查更新会依次尝试 主地址 → GitHub → Gitee 三个清单地址；APK 下载失败会自动换镜像地址。",
-  "downloadUrl": "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.4.2.apk",
+  "version": "1.4.3",
+  "versionCode": 10403,
+  "publishedAt": 1792848570647,
+  "notes": "更新链路加两道完整性闸门：(1) 只允许 https —— 清单地址与所有下载地址凡是明文 http 一律拒绝；(2) 下载后核对 SHA-256，不一致就当该镜像失败并自动换下一个，不把坏包交给系统安装界面。同时修了签名根信任：release 改用仓库外的正式密钥 + 证书轮换链，已装旧版可原地覆盖升级、不丢数据。",
+  "downloadUrl": "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.4.3.apk",
   "mirrorDownloadUrls": [
-    "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.4.2/headache-diary-1.4.2.apk",
-    "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.2/headache-diary-1.4.2.apk"
+    "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.4.3/headache-diary-1.4.3.apk",
+    "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.3/headache-diary-1.4.3.apk"
   ],
-  "sizeBytes": 19602471,
-  "sha256": "de0b7c2492d10398e216bb15686dc3df5780bd073b98fec0d804ecdbd9dc5fa1",
+  "sizeBytes": 19613503,
+  "sha256": "20496df0d8847067f92c694c06aea6353df1cca8e8470a9f88da66c816b03520",
   "mandatory": false
 }

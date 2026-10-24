@@ -37,22 +37,25 @@ App 内置了**兜底地址**（同一个文件的 Gitee 镜像），会自动�
 ```json
 {
   "app": "headache-diary",
-  "version": "1.4.2",
-  "versionCode": 10402,
-  "publishedAt": 1792812484610,
-  "notes": "在线更新支持国内网络自动兜底",
-  "downloadUrl": "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.4.2.apk",
+  "version": "1.4.3",
+  "versionCode": 10403,
+  "publishedAt": 1792848570647,
+  "notes": "更新链路加两道完整性闸门：只允许 https；下载后核对 SHA-256",
+  "downloadUrl": "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.4.3.apk",
   "mirrorDownloadUrls": [
-    "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.4.2/headache-diary-1.4.2.apk",
-    "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.2/headache-diary-1.4.2.apk"
+    "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.4.3/headache-diary-1.4.3.apk",
+    "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.3/headache-diary-1.4.3.apk"
   ],
-  "sizeBytes": 19602471,
-  "sha256": "de0b7c2492d10398e216bb15686dc3df5780bd073b98fec0d804ecdbd9dc5fa1",
+  "sizeBytes": 19613503,
+  "sha256": "20496df0d8847067f92c694c06aea6353df1cca8e8470a9f88da66c816b03520",
   "mandatory": false
 }
 ```
 
 - `downloadUrl` 是**直链**（raw 域名），没有跳转，失败时最快换下一个。
+- 清单里**只允许 https**：App 端凡是明文 `http` 一律拒绝（清单地址与所有下载地址）。
+- 清单里的 `sha256` 会被 App 在**下载完成后实测比对**：对不上就当这个镜像失败、
+  自动换下一个镜像，不会把坏包交给系统安装界面。
 - `mirrorDownloadUrls` 是**备用下载地址**（可选字段）：写上以后，APK 下载主地址失败会自动换镜像，
   不用用户重试。老版本 App 不认识这个字段时会忽略它，不影响更新。
 
