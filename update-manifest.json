@@ -1,0 +1,11 @@
+{
+    "app":  "headache-diary",
+    "version":  "1.4.1",
+    "versionCode":  10401,
+    "publishedAt":  1792811058519,
+    "notes":  "设置页新增：版本与更新 / 反馈与建议 / 推荐给朋友 / 新手引导 / 数据导入导出；默认更新地址指向本公开仓库",
+    "downloadUrl":  "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.1/headache-diary-1.4.1.apk",
+    "sizeBytes":  19598571,
+    "sha256":  "36d3d77284ba25f6de95c0ffc0e490e7b279edfdbe5d536455e8fc9bc727d323",
+    "mandatory":  false
+}
