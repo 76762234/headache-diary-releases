@@ -1,15 +1,15 @@
 {
   "app": "headache-diary",
-  "version": "1.4.3",
-  "versionCode": 10403,
-  "publishedAt": 1792849732029,
-  "notes": "更新链路加两道完整性闸门：(1) 只允许 https —— 清单地址与所有下载地址凡是明文 http 一律拒绝；(2) 下载后核对 SHA-256，不一致就当该镜像失败并自动换下一个，不把坏包交给系统安装界面。同时修了签名根信任：release 改用仓库外的正式密钥 + 证书轮换链，已装旧版可原地覆盖升级、不丢数据。下载主地址改为实测最快的 Gitee Release 资产（国内网络约 2 MB/s）。",
-  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.4.3/headache-diary-1.4.3.apk",
+  "version": "1.5.0",
+  "versionCode": 10500,
+  "publishedAt": 1792856503072,
+  "notes": "发作日期支持可选区间：一次发作可以跨多天，月历点两次选起止日，报告里显示「10月22日 ~ 10月25日（4 天）」，区间内每一天都算有症状。头痛类型支持多选：一次发作可同时记「偏头痛、紧张型头痛」，报告与 CSV 导出都能完整呈现。CSV 导出新增 date_end 列，头痛类型列改为 | 分隔多值。",
+  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.5.0/headache-diary-1.5.0.apk",
   "mirrorDownloadUrls": [
-    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.4.3.apk",
-    "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.3/headache-diary-1.4.3.apk"
+    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.5.0.apk",
+    "https://github.com/76762234/headache-diary-releases/releases/download/v1.5.0/headache-diary-1.5.0.apk"
   ],
-  "sizeBytes": 19613503,
-  "sha256": "20496df0d8847067f92c694c06aea6353df1cca8e8470a9f88da66c816b03520",
+  "sizeBytes": 19625791,
+  "sha256": "dea1fbc3a174f76b4d67b01470af2c302d8ff40639ef0b976a2e5f4ead2ede99",
   "mandatory": false
 }

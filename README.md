@@ -37,17 +37,17 @@ App 内置了**兜底地址**（同一个文件的 Gitee 镜像），会自动�
 ```json
 {
   "app": "headache-diary",
-  "version": "1.4.3",
-  "versionCode": 10403,
-  "publishedAt": 1792849732029,
-  "notes": "更新链路加两道完整性闸门：只允许 https；下载后核对 SHA-256",
-  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.4.3/headache-diary-1.4.3.apk",
+  "version": "1.5.0",
+  "versionCode": 10500,
+  "publishedAt": 1792856393126,
+  "notes": "发作日期支持可选区间；头痛类型支持多选",
+  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.5.0/headache-diary-1.5.0.apk",
   "mirrorDownloadUrls": [
-    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.4.3.apk",
-    "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.3/headache-diary-1.4.3.apk"
+    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.5.0.apk",
+    "https://github.com/76762234/headache-diary-releases/releases/download/v1.5.0/headache-diary-1.5.0.apk"
   ],
-  "sizeBytes": 19613503,
-  "sha256": "20496df0d8847067f92c694c06aea6353df1cca8e8470a9f88da66c816b03520",
+  "sizeBytes": 19625791,
+  "sha256": "dea1fbc3a174f76b4d67b01470af2c302d8ff40639ef0b976a2e5f4ead2ede99",
   "mandatory": false
 }
 ```
