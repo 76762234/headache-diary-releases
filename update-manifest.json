@@ -1,11 +1,15 @@
 {
-    "app":  "headache-diary",
-    "version":  "1.4.1",
-    "versionCode":  10401,
-    "publishedAt":  1792811058519,
-    "notes":  "设置页新增：版本与更新 / 反馈与建议 / 推荐给朋友 / 新手引导 / 数据导入导出；默认更新地址指向本公开仓库",
-    "downloadUrl":  "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.1/headache-diary-1.4.1.apk",
-    "sizeBytes":  19598571,
-    "sha256":  "36d3d77284ba25f6de95c0ffc0e490e7b279edfdbe5d536455e8fc9bc727d323",
-    "mandatory":  false
+  "app": "headache-diary",
+  "version": "1.4.2",
+  "versionCode": 10402,
+  "publishedAt": 1792812484610,
+  "notes": "在线更新支持国内网络自动兜底：检查更新会依次尝试 主地址 → GitHub → Gitee 三个清单地址；APK 下载失败会自动换镜像地址。",
+  "downloadUrl": "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.2/headache-diary-1.4.2.apk",
+  "mirrorDownloadUrls": [
+    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.4.2.apk",
+    "https://gitee.com/wch850412/headache-diary-releases/raw/main/headache-diary-1.4.2.apk"
+  ],
+  "sizeBytes": 19602471,
+  "sha256": "de0b7c2492d10398e216bb15686dc3df5780bd073b98fec0d804ecdbd9dc5fa1",
+  "mandatory": false
 }

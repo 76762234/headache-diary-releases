@@ -4,7 +4,7 @@
 
 | 文件 | 说明 |
 |---|---|
-| `update-manifest.json` | 更新清单：最新版本号、更新说明、APK 下载地址、大小、sha256 |
+| `update-manifest.json` | 更新清单：最新版本号、更新说明、APK 下载地址、**备用下载地址**、大小、sha256 |
 | `headache-diary-<版本>.apk` | 各版本的 Android 安装包（归档副本） |
 
 **源码仓库是私有的**（`76762234/headache-diary`），不在这里，也不从这里发布。
@@ -27,21 +27,32 @@ https://raw.githubusercontent.com/76762234/headache-diary-releases/main/update-m
 
 App 的「设置 → 版本与更新 → 更新地址」填这个即可（App 里已预填，一般不用改）。
 
+**国内网络提示**：`raw.githubusercontent.com` 在部分国内移动网络下连不上。
+App 内置了**兜底地址**（同一个文件的 Gitee 镜像），会自动挨个试 ——
+主地址连不上时改用镜像，用哪边由 App 自己判断，你不需要做任何设置。
+
 清单长这样：
 
 ```json
 {
   "app": "headache-diary",
-  "version": "1.4.1",
-  "versionCode": 10401,
-  "publishedAt": 1792800000000,
-  "notes": "这次改了什么",
-  "downloadUrl": "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.1/headache-diary-1.4.1.apk",
-  "sizeBytes": 19546211,
-  "sha256": "…",
+  "version": "1.4.2",
+  "versionCode": 10402,
+  "publishedAt": 1792812484610,
+  "notes": "在线更新支持国内网络自动兜底",
+  "downloadUrl": "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.2/headache-diary-1.4.2.apk",
+  "mirrorDownloadUrls": [
+    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.4.2.apk",
+    "https://gitee.com/wch850412/headache-diary-releases/raw/main/headache-diary-1.4.2.apk"
+  ],
+  "sizeBytes": 19602471,
+  "sha256": "de0b7c2492d10398e216bb15686dc3df5780bd073b98fec0d804ecdbd9dc5fa1",
   "mandatory": false
 }
 ```
+
+`mirrorDownloadUrls` 是**可选**字段：写上以后，APK 下载主地址失败会自动换镜像，
+不用用户重试。老版本 App 不认识这个字段时会忽略它，不影响更新。
 
 ---
 
@@ -68,10 +79,13 @@ App 的「设置 → 版本与更新 → 更新地址」填这个即可（App �
 # 1. 构建 APK
 powershell -File app\android\build-apk.ps1 -Task assembleRelease
 
-# 2. 生成清单（downloadUrl 指向本仓库的 Release 目录）
+# 2. 生成清单（downloadUrl 指向本仓库的 Release 目录，MirrorBaseUrl 给备用下载地址）
 powershell -File scripts\publish-update.ps1 `
   -DownloadBaseUrl "https://github.com/76762234/headache-diary-releases/releases/download/v<版本号>" `
-  -ManifestOut "<本仓库目录>/update-manifest.json"
+  -MirrorBaseUrl "https://raw.githubusercontent.com/76762234/headache-diary-releases/main" `
+  -MirrorBaseUrl "https://gitee.com/wch850412/headache-diary-releases/raw/main" `
+  -ManifestOut "<本仓库目录>/update-manifest.json" `
+  -Notes "这次改了什么"
 
 # 3. 把 APK 与清单提交到本仓库，并上传 Release 资产
 ```
