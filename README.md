@@ -39,11 +39,11 @@ App 内置了**兜底地址**（同一个文件的 Gitee 镜像），会自动�
   "app": "headache-diary",
   "version": "1.4.3",
   "versionCode": 10403,
-  "publishedAt": 1792848570647,
+  "publishedAt": 1792849732029,
   "notes": "更新链路加两道完整性闸门：只允许 https；下载后核对 SHA-256",
-  "downloadUrl": "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.4.3.apk",
+  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.4.3/headache-diary-1.4.3.apk",
   "mirrorDownloadUrls": [
-    "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.4.3/headache-diary-1.4.3.apk",
+    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.4.3.apk",
     "https://github.com/76762234/headache-diary-releases/releases/download/v1.4.3/headache-diary-1.4.3.apk"
   ],
   "sizeBytes": 19613503,
@@ -52,7 +52,11 @@ App 内置了**兜底地址**（同一个文件的 Gitee 镜像），会自动�
 }
 ```
 
-- `downloadUrl` 是**直链**（raw 域名），没有跳转，失败时最快换下一个。
+- `downloadUrl` 是**实测最快的那条**（Gitee Release 资产，国内约 2 MB/s）。
+  之前用的是 raw 直链，实测只有约 52 KB/s —— 19 MB 要等 6 分钟，
+  对手机流量用户等于「下载不了」。换主地址后实测约 10 秒。
+- `mirrorDownloadUrls` 是**备用下载地址**（可选字段）：主地址连不上或校验不过时自动换，
+  不用用户重试。raw 直链与 GitHub Release 资产都在里面。
 - 清单里**只允许 https**：App 端凡是明文 `http` 一律拒绝（清单地址与所有下载地址）。
 - 清单里的 `sha256` 会被 App 在**下载完成后实测比对**：对不上就当这个镜像失败、
   自动换下一个镜像，不会把坏包交给系统安装界面。
