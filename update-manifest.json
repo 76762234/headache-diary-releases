@@ -1,15 +1,15 @@
 {
   "app": "headache-diary",
-  "version": "1.5.0",
-  "versionCode": 10500,
-  "publishedAt": 1792856503072,
-  "notes": "发作日期支持可选区间：一次发作可以跨多天，月历点两次选起止日，报告里显示「10月22日 ~ 10月25日（4 天）」，区间内每一天都算有症状。头痛类型支持多选：一次发作可同时记「偏头痛、紧张型头痛」，报告与 CSV 导出都能完整呈现。CSV 导出新增 date_end 列，头痛类型列改为 | 分隔多值。",
-  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.5.0/headache-diary-1.5.0.apk",
+  "version": "1.6.0",
+  "versionCode": 10600,
+  "publishedAt": 1792909209803,
+  "notes": "三条用户反馈落地：① 记录页的历史记录现在可以直接删 —— 每行右侧有「删除」按钮，删除前二次确认，删完 5 秒内可撤销；② 「个人抬头信息」整条下线（设置页表单、报告抬头、就诊日前 3 天提醒、备份字段一并拿掉），老备份照常能导入；③ 回顾页时间窗新增「自定义」，可自选起止日期看统计。另外修掉一个 bug：回顾页的「全部」档此前一直显示成「近 30 天」。",
+  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.6.0/headache-diary-1.6.0.apk",
   "mirrorDownloadUrls": [
-    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.5.0.apk",
-    "https://github.com/76762234/headache-diary-releases/releases/download/v1.5.0/headache-diary-1.5.0.apk"
+    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.6.0.apk",
+    "https://github.com/76762234/headache-diary-releases/releases/download/v1.6.0/headache-diary-1.6.0.apk"
   ],
   "sizeBytes": 19625791,
-  "sha256": "dea1fbc3a174f76b4d67b01470af2c302d8ff40639ef0b976a2e5f4ead2ede99",
+  "sha256": "b87c3594992c3bcd504d5bf0439a3853b9b05afc4d673920e20302d79bd9616c",
   "mandatory": false
 }
