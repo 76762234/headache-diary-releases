@@ -1,15 +1,15 @@
 {
   "app": "headache-diary",
-  "version": "1.6.0",
-  "versionCode": 10600,
-  "publishedAt": 1792909209803,
-  "notes": "三条用户反馈落地：① 记录页的历史记录现在可以直接删 —— 每行右侧有「删除」按钮，删除前二次确认，删完 5 秒内可撤销；② 「个人抬头信息」整条下线（设置页表单、报告抬头、就诊日前 3 天提醒、备份字段一并拿掉），老备份照常能导入；③ 回顾页时间窗新增「自定义」，可自选起止日期看统计。另外修掉一个 bug：回顾页的「全部」档此前一直显示成「近 30 天」。",
-  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.6.0/headache-diary-1.6.0.apk",
+  "version": "1.7.0",
+  "versionCode": 10700,
+  "publishedAt": 1792919186844,
+  "notes": "下载现在支持断点续传：下载中途断网、退出 App，重新点「下载更新」会从上次断掉的地方接着下，不用从头再来。本地已经下完整的文件会先校验，校验通过就不用重复下载。",
+  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.7.0/headache-diary-1.7.0.apk",
   "mirrorDownloadUrls": [
-    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.6.0.apk",
-    "https://github.com/76762234/headache-diary-releases/releases/download/v1.6.0/headache-diary-1.6.0.apk"
+    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.7.0.apk",
+    "https://github.com/76762234/headache-diary-releases/releases/download/v1.7.0/headache-diary-1.7.0.apk"
   ],
-  "sizeBytes": 19625791,
-  "sha256": "b87c3594992c3bcd504d5bf0439a3853b9b05afc4d673920e20302d79bd9616c",
+  "sizeBytes": 19629887,
+  "sha256": "6addc004e29d6f0fb3a45a99d46a783fb3f8a2ce83e62cbdf3de234e4dfb638c",
   "mandatory": false
 }
