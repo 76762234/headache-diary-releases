@@ -1,15 +1,15 @@
 {
   "app": "headache-diary",
-  "version": "1.8.0",
-  "versionCode": 10800,
-  "publishedAt": 1792922881408,
-  "notes": "补记发作时支持选「不连续的多个日子」了：日期卡片多一个「多个日期」填法 —— 点一天选一天、再点一下取消，可以选 22 号、23 号、29 号这种中间断开的几天（默认仍是「连续区间」，原来的用法不变）。报告与导出里的日期会按实际选的那几天写，统计的「有发作的天数」也只算真正痛过的那几天。",
-  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.8.0/headache-diary-1.8.0.apk",
+  "version": "1.9.0",
+  "versionCode": 10900,
+  "publishedAt": 1792933439091,
+  "notes": "装上就有 2023 年以来的完整病史：把便签里记的 31 条旧发作（覆盖 41 天）一次性导入，统计与报告从 2023 年就开始算。另外新增发作起止时刻（几点开始疼 / 几点不疼了）与「哪种药见效快」的对比，以及进设置页自动提示新版本。",
+  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.9.0/headache-diary-1.9.0.apk",
   "mirrorDownloadUrls": [
-    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.8.0.apk",
-    "https://github.com/76762234/headache-diary-releases/releases/download/v1.8.0/headache-diary-1.8.0.apk"
+    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.9.0.apk",
+    "https://github.com/76762234/headache-diary-releases/releases/download/v1.9.0/headache-diary-1.9.0.apk"
   ],
-  "sizeBytes": 19650367,
-  "sha256": "4b7f452d4fb0e01671a27664868a05893cb30759dae9fe97615ded793a2a220d",
+  "sizeBytes": 19711807,
+  "sha256": "3fa36fecdb685d92be52a119b7a4f38cfd91ec9a48f8b4861177ee234f4ef35c",
   "mandatory": false
 }
