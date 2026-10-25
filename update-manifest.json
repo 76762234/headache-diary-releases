@@ -1,15 +1,15 @@
 {
   "app": "headache-diary",
-  "version": "1.9.0",
-  "versionCode": 10900,
-  "publishedAt": 1792933439091,
-  "notes": "装上就有 2023 年以来的完整病史：把便签里记的 31 条旧发作（覆盖 41 天）一次性导入，统计与报告从 2023 年就开始算。另外新增发作起止时刻（几点开始疼 / 几点不疼了）与「哪种药见效快」的对比，以及进设置页自动提示新版本。",
-  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.9.0/headache-diary-1.9.0.apk",
+  "version": "1.10.0",
+  "versionCode": 11000,
+  "publishedAt": 1792934860433,
+  "notes": "表单除「发作日期」外全部可空，缺项只提示不拦截；日期与时刻改成选择器（月历点选 + 时刻滚轮，分钟 5 分钟一档）；新增草稿箱，可暂存没填完的记录；回顾页与首页的统计支持「图 ⇄ 表」切换；进设置页会自动检测新版本，有新版直接弹窗提示并可下载安装。",
+  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.10.0/headache-diary-1.10.0.apk",
   "mirrorDownloadUrls": [
-    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.9.0.apk",
-    "https://github.com/76762234/headache-diary-releases/releases/download/v1.9.0/headache-diary-1.9.0.apk"
+    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.10.0.apk",
+    "https://github.com/76762234/headache-diary-releases/releases/download/v1.10.0/headache-diary-1.10.0.apk"
   ],
-  "sizeBytes": 19711807,
-  "sha256": "3fa36fecdb685d92be52a119b7a4f38cfd91ec9a48f8b4861177ee234f4ef35c",
+  "sizeBytes": 19740479,
+  "sha256": "c320f7f8d1b245c6204ec0be0989de1181644f8a1c16d20b1a6662c142885f8d",
   "mandatory": false
 }
