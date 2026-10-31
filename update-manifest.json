@@ -1,15 +1,15 @@
 {
   "app": "headache-diary",
-  "version": "1.11.0",
-  "versionCode": 11100,
-  "publishedAt": 1793149200151,
-  "notes": "记录页改成按天列记录（一天一行，日期倒序），点某一天进新增的「当天详情页」（当天概览 + 完整发作详情 + 当天用药流水）；日历点某一天是同一个入口。",
-  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.11.0/headache-diary-1.11.0.apk",
+  "version": "1.12.0",
+  "versionCode": 11200,
+  "publishedAt": 1793411401591,
+  "notes": "界面整体改版：四个页面换成 iOS 风格大标题 + 卡片布局（首页速记主卡与趋势图例、记录页天记录卡、回顾页指标卡、编辑页分组表单与吸底保存）；记录页新增胶囊筛选（全部 / 中重度 / 有用药 / 未记缓解时刻）；强度配色沿用原有有序色阶，低刺激模式不含红色。",
+  "downloadUrl": "https://gitee.com/wch850412/headache-diary-releases/releases/download/v1.12.0/headache-diary-1.12.0.apk",
   "mirrorDownloadUrls": [
-    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.11.0.apk",
-    "https://github.com/76762234/headache-diary-releases/releases/download/v1.11.0/headache-diary-1.11.0.apk"
+    "https://raw.githubusercontent.com/76762234/headache-diary-releases/main/headache-diary-1.12.0.apk",
+    "https://github.com/76762234/headache-diary-releases/releases/download/v1.12.0/headache-diary-1.12.0.apk"
   ],
-  "sizeBytes": 56930518,
-  "sha256": "91c87d426c8334c153c81ead37ff922c40ebeba1e2cc684fb98467b2430549fb",
+  "sizeBytes": 56942806,
+  "sha256": "5ad4d7f6ef0fa203d05f4a8478c6ceb53ff3aeef1fff0dcb44db1dd802473e31",
   "mandatory": false
 }
